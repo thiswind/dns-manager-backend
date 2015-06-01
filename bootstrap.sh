@@ -17,12 +17,13 @@ fi
 
 . .venv/bin/activate
 
-pip install --upgrade pip
-pip install --upgrade flask-restful
-pip install --upgrade Flask-Testing
-pip install --upgrade pyOpenSSL
-pip install --upgrade flask-cors
-pip install --upgrade dnspython
+pip install -q --upgrade pip
+pip install -q --upgrade flask-restful
+pip install -q --upgrade Flask-Testing
+pip install -q --upgrade pyOpenSSL
+pip install -q --upgrade flask-cors
+pip install -q --upgrade dnspython
+pip install -q --upgrade docker-py
 
 deactivate
 
