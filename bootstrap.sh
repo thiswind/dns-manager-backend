@@ -27,7 +27,7 @@ pip install --upgrade dnspython
 deactivate
 
 #gen keys
-KEY_HOME="keys"
+KEY_HOME=".keys"
 mkdir -p ${KEY_HOME}
 sudo -H openssl genrsa -des3 -out ${KEY_HOME}/key.key 1024
 sudo -H openssl req -new -key ${KEY_HOME}/key.key -out ${KEY_HOME}//csr.csr
