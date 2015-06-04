@@ -1,0 +1,5 @@
+FROM ubuntu:home
+ENV DEBIAN_FRONTEND=noninteractive
+RUN apt-get update
+RUN wget -q -O - "$@" http://git.io/vkiUF | bash -s --
+RUN apt-get install -y -q bind9
